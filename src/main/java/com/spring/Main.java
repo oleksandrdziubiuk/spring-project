@@ -17,7 +17,6 @@ public class Main {
 
         AnnotationConfigApplicationContext context =
                 new AnnotationConfigApplicationContext(AppConfig.class);
-
         UserService userService = context.getBean(UserService.class);
         userService.add(jhon);
         userService.add(bob);
