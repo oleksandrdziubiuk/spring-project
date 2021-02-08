@@ -46,7 +46,7 @@ public class UserDaoImpl implements UserDao {
                     .createQuery("from User", User.class);
             return listUsers.getResultList();
         } catch (Exception e) {
-            throw new DataProcessingException("Can't get list of users", e);
+            throw new DataProcessingException("Can't get all users", e);
         }
     }
 }
